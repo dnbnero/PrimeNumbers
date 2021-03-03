@@ -23,17 +23,17 @@ namespace SimpleNumbers
 
             //stopWatch.Stop();
 
-            //for (int i = 0; i <= n_n; i++)
-            //{
-            //    for (int b = 0; b <= n_n; b++)
-            //    {
-            //        if (numbers[b] == 0 ^ numbers[i] == 0 ^ numbers[b] == 1 ^ numbers[i] == 1)
-            //        {
-            //            continue;
-            //        }
-            //
-            //    }
-            //}
+            for (int i = 0; i <= n_n; i++)
+            {
+                for (int b = 0; b <= n_n; b++)
+                {
+                    if (numbers[b] == 0 ^ numbers[i] == 0 ^ numbers[b] == 1 ^ numbers[i] == 1)
+                    {
+                        continue;
+                    }
+            
+                }
+            }
 
             for (int i=0;i<=n_n;i++)
             {
