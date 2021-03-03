@@ -9,7 +9,7 @@ namespace SimpleNumbers
             Console.WriteLine("Ведите последнее число");
             var n_n = Convert.ToUInt64(Console.ReadLine());
             Console.WriteLine(" ");
-            ulong[] numbers = new ulong[n_n + n_n];
+            ulong[] numbers = new ulong[n_n + 1];
 
             for (ulong i = 0; i <= n_n; i++)
             {
