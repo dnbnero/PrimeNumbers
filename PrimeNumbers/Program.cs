@@ -14,14 +14,14 @@ namespace SimpleNumbers
             Console.WriteLine(" ");
             int[] numbers = new int[n_n + 1];
 
-            //stopWatch.Start();
+            stopWatch.Start();
 
             for (int i = 0; i <= n_n; i++)
             {
                 numbers[i] = i;
             }
 
-            //stopWatch.Stop();
+            stopWatch.Stop();
 
             //for (int i = 0; i <= n_n; i++)
             //{
@@ -46,7 +46,7 @@ namespace SimpleNumbers
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            //Console.WriteLine(stopWatch.Elapsed);
+            Console.WriteLine(stopWatch.Elapsed);
 
             while (true) ;
         }
