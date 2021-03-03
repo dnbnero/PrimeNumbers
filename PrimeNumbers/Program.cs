@@ -36,7 +36,7 @@ namespace SimpleNumbers
                 Console.Write(i + " ");
             }
 
-            while (true) ;
+            Console.ReadKey();
         }
     }
 }
