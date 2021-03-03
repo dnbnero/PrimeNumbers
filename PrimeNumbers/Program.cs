@@ -7,18 +7,18 @@ namespace SimpleNumbers
         {
 
             Console.WriteLine("Ведите последнее число");
-            var n_n = Convert.ToInt32(Console.ReadLine());
+            var n_n = Convert.ToUInt64(Console.ReadLine());
             Console.WriteLine(" ");
-            int[] numbers = new int[n_n + 1];
+            ulong[] numbers = new ulong[n_n + n_n];
 
-            for (int i = 0; i <= n_n; i++)
+            for (ulong i = 0; i <= n_n; i++)
             {
                 numbers[i] = i;
             }
 
-            for (int i = 2; i <= n_n; i++)
+            for (ulong i = 2; i <= n_n; i++)
             {
-                for (int b = 2; b <= n_n; b++)
+                for (ulong b = 2; b <= n_n; b++)
                 {
                     if (i * b <= n_n)
                     {
@@ -27,7 +27,7 @@ namespace SimpleNumbers
                 }
             }
 
-            for (int i = 0; i <= n_n; i++)
+            for (ulong i = 0; i <= n_n; i++)
             {
                 if (numbers[i] == 0 ^ numbers[i] == 1)
                 {
