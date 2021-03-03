@@ -1,0 +1,3 @@
+# PrimeNumbers
+My first C# program. Previously i used list, hashset...
+Now it works much faster.
