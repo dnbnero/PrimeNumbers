@@ -12,7 +12,7 @@ namespace SimpleNumbers
             Console.WriteLine("Ведите последнее число");
             var n_n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" ");
-            int[] numbers = new int[n_n+1];
+            int[] numbers = new int[n_n + 1];
 
             //stopWatch.Start();
 
@@ -22,27 +22,25 @@ namespace SimpleNumbers
             }
 
             //stopWatch.Stop();
-            for (int i = 0; i <= n_n; i++)
-            {
-                for (int b = 0; b <= n_n; b++)
-                {
-                    if (numbers[b] == 0 ^ numbers[i] == 0 )
-                    {
-                        continue;
-                    }
-                    if (b * i < n_n)
-                    {
-                        numbers[b * i] = 0;
-                    }
-                }
-            }
+
+            //for (int i = 0; i <= n_n; i++)
+            //{
+            //    for (int b = 0; b <= n_n; b++)
+            //    {
+            //        if (numbers[b] == 0 ^ numbers[i] == 0 ^ numbers[b] == 1 ^ numbers[i] == 1)
+            //        {
+            //            continue;
+            //        }
+            //
+            //    }
+            //}
 
             for (int i=0;i<=n_n;i++)
             {
-                //if (numbers[i] == 0 ^ numbers[i] == 1)
-                //{
-                //        continue;
-                //}
+                if (numbers[i] == 0 ^ numbers[i] == 1)
+                {
+                        continue;
+                }
                 Console.Write(i + " ");
             }
             Console.WriteLine();
