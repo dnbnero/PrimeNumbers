@@ -9,7 +9,7 @@ namespace SimpleNumbers
             Console.WriteLine("Ведите последнее число");
             var n_n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" ");
-            int[] numbers = new int[n_n + 1]; 
+            int[] numbers = new int[n_n + 1];
 
             for (int i = 0; i <= n_n; i++)
             {
@@ -20,18 +20,18 @@ namespace SimpleNumbers
             {
                 for (int b = 2; b <= n_n; b++)
                 {
-                    if (i*b<=n_n)
+                    if (i * b <= n_n)
                     {
                         numbers[b * i] = 0;
                     }
                 }
             }
 
-            for (int i=0;i<=n_n;i++)
+            for (int i = 0; i <= n_n; i++)
             {
                 if (numbers[i] == 0 ^ numbers[i] == 1)
                 {
-                        continue;
+                    continue;
                 }
                 Console.Write(i + " ");
             }
