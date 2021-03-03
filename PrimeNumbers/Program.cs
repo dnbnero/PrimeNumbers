@@ -16,6 +16,17 @@ namespace SimpleNumbers
                 numbers[i] = i;
             }
 
+            for (int i = 2; i <= n_n; i++)
+            {
+                for (int b = 2; b <= n_n; b++)
+                {
+                    if (i*b<=n_n)
+                    {
+                        numbers[b * i] = 0;
+                    }
+                }
+            }
+
             for (int i=0;i<=n_n;i++)
             {
                 if (numbers[i] == 0 ^ numbers[i] == 1)
