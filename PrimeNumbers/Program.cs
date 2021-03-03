@@ -31,7 +31,11 @@ namespace SimpleNumbers
                     {
                         continue;
                     }
-            
+                    if (b * i <= n_n)
+                    {
+                        numbers[b * i] = 0;
+                    }
+
                 }
             }
 
