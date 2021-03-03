@@ -7,18 +7,25 @@ namespace SimpleNumbers
     {
         static void Main(string[] args)
         {
+            //Создаём таймер
             Stopwatch stopWatch = new Stopwatch();
+
+            //Спрашиваем у пользователя число N
             Console.WriteLine("Ведите последнее число");
             var n_n = Convert.ToUInt64(Console.ReadLine());
             Console.WriteLine(" ");
-            stopWatch.Start();
-            ulong[] numbers = new ulong[n_n + 1];
 
+            //Запускаем таймер
+            stopWatch.Start();
+
+            //Создаем массив чисел от 0 до N
+            ulong[] numbers = new ulong[n_n + 1];
             for (ulong i = 0; i <= n_n; i++)
             {
                 numbers[i] = i;
             }
 
+            //Заменяем не простые числа на ноль
             for (ulong i = 2; i <= n_n; i++)
             {
                 for (ulong b = 2; b <= n_n; b++)
@@ -30,6 +37,7 @@ namespace SimpleNumbers
                 }
             }
 
+            //Выводим простые числа от 2 до N
             for (ulong i = 0; i <= n_n; i++)
             {
                 if (numbers[i] == 0 ^ numbers[i] == 1)
@@ -38,6 +46,8 @@ namespace SimpleNumbers
                 }
                 Console.Write(i + " ");
             }
+
+            //Останавливаем таймер и выводим результат
             stopWatch.Stop();
             Console.WriteLine("");
             Console.WriteLine("");
